@@ -1,12 +1,33 @@
-// ============ NAVBAR SCROLL EFFECT ============
+// ============ OPTIMIZED SCROLL EFFECTS ============
 const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 80) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
+const hero = document.querySelector('.hero-content');
+let lastScrollY = window.scrollY;
+let ticking = false;
+
+function onScroll() {
+  lastScrollY = window.scrollY;
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      // Navbar effect
+      if (lastScrollY > 80) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      
+      // Parallax effect
+      if (hero) {
+        hero.style.transform = `translateY(${lastScrollY * 0.3}px)`;
+        hero.style.opacity = 1 - (lastScrollY / 800);
+      }
+      
+      ticking = false;
+    });
+    ticking = true;
   }
-});
+}
+
+window.addEventListener('scroll', onScroll, { passive: true });
 
 // ============ SCROLL ANIMATIONS ============
 const animatedEls = document.querySelectorAll('.animate-on-scroll');
@@ -69,12 +90,3 @@ function animateValue(el, start, end, duration) {
   window.requestAnimationFrame(step);
 }
 
-// ============ PARALLAX ON HERO ============
-window.addEventListener('scroll', () => {
-  const hero = document.querySelector('.hero-content');
-  if (hero) {
-    const scroll = window.scrollY;
-    hero.style.transform = `translateY(${scroll * 0.3}px)`;
-    hero.style.opacity = 1 - (scroll / 800);
-  }
-});
