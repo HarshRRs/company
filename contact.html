@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>ELEC SBE | Contact</title>
+  <meta name="description" content="Contactez ELEC SBE - 5 Rue Ferdinand de Lesseps, 95190 Goussainville. +33 1 30 11 93 30.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    .page-header { min-height:50vh; display:flex; align-items:center; justify-content:center; text-align:center;
+      background:linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); padding-top:100px; }
+    .page-header h1 { font-size:clamp(2rem,5vw,3.5rem); font-weight:800;
+      background:linear-gradient(135deg,var(--white),var(--electric)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .page-header p { color:var(--gray-400); margin-top:12px; font-size:1.1rem; }
+    .contact-section { padding:80px 0; }
+    .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+    .contact-info { display:flex; flex-direction:column; gap:28px; }
+    .info-card { background:var(--glass); border:1px solid var(--glass-border); border-radius:var(--radius);
+      padding:32px; display:flex; align-items:flex-start; gap:20px; transition:var(--transition); }
+    .info-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-card); }
+    .info-card .icon-box { width:56px; height:56px; border-radius:14px;
+      background:linear-gradient(135deg,var(--blue),var(--electric)); display:flex; align-items:center; justify-content:center;
+      font-size:1.3rem; flex-shrink:0; }
+    .info-card h4 { font-size:1rem; font-weight:600; margin-bottom:6px; }
+    .info-card p { font-size:0.85rem; color:var(--gray-400); line-height:1.6; }
+    .info-card a { color:var(--electric); font-weight:600; font-size:0.85rem; margin-top:8px; display:inline-block; }
+    .contact-form { background:var(--glass); border:1px solid var(--glass-border); border-radius:var(--radius); padding:40px; }
+    .contact-form h2 { font-size:1.5rem; font-weight:700; margin-bottom:24px; }
+    .form-group { margin-bottom:20px; }
+    .form-group label { display:block; font-size:0.85rem; color:var(--gray-400); margin-bottom:8px; }
+    .form-group input, .form-group textarea { width:100%; padding:14px 18px; border-radius:var(--radius-sm);
+      border:1px solid var(--glass-border); background:rgba(255,255,255,0.05); color:var(--white);
+      font-family:'Open Sans',sans-serif; font-size:0.9rem; outline:none; transition:var(--transition); }
+    .form-group input:focus, .form-group textarea:focus { border-color:var(--electric); box-shadow:0 0 0 3px rgba(0,212,255,0.1); }
+    .form-group textarea { resize:vertical; min-height:120px; }
+    .submit-btn { width:100%; padding:16px; font-family:'Rubik',sans-serif; font-size:1rem; font-weight:600;
+      color:var(--white); background:linear-gradient(135deg,var(--blue),var(--electric)); border:none;
+      border-radius:50px; cursor:pointer; transition:var(--transition); text-transform:uppercase; letter-spacing:1px; }
+    .submit-btn:hover { transform:translateY(-2px); box-shadow:0 8px 32px rgba(0,212,255,0.3); }
+    .map-section { margin-top:64px; }
+    .map-section iframe { width:100%; height:400px; border-radius:var(--radius); border:1px solid var(--glass-border);
+      filter:brightness(0.8); }
+    @media(max-width:768px) { .contact-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar scrolled">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="https://www.elecsbe.com/FR/img/elec_LogoTopLeft_white.png" alt="ELEC SBE Logo"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À Propos</a></li>
+      <li class="dropdown">
+        <a href="index.html#specialty">Services <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:4px"></i></a>
+        <div class="dropdown-content">
+          <a href="index.html#specialty">CFO — Courants Forts</a>
+          <a href="index.html#specialty">CFA — Courants Faibles</a>
+          <a href="index.html#specialty">GPA Service</a>
+        </div>
+      </li>
+      <li><a href="index.html#projects">Projets</a></li>
+      <li><a href="career.html">Ressources Humaines</a></li>
+      <li><a href="contact.html" style="color:var(--electric)">Contact</a></li>
+      <li><a href="https://www.elecsbe.com/FrontServer/Default.aspx" class="btn-primary" style="padding:10px 28px;font-size:0.8rem">Mon Compte</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-sidebar">
+  <button class="close-btn">&times;</button>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À Propos</a></li>
+    <li><a href="index.html#specialty">Services</a></li>
+    <li><a href="index.html#projects">Projets</a></li>
+    <li><a href="career.html">Ressources Humaines</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- HEADER -->
+<section class="page-header">
+  <div>
+    <h1>Contact Us</h1>
+    <p>If You Have Any Queries, Please Feel Free To Contact Us</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-card animate-on-scroll">
+          <div class="icon-box"><i class="fas fa-phone"></i></div>
+          <div>
+            <h4>Phone Number</h4>
+            <p>+33 1 30 11 93 30</p>
+            <p>+33 1 30 11 93 31</p>
+            <a href="tel:+33130119330">Call Now →</a>
+          </div>
+        </div>
+        <div class="info-card animate-on-scroll">
+          <div class="icon-box"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>Email Address</h4>
+            <p>info@elecsbe.com</p>
+            <a href="mailto:info@elecsbe.com">Email Now →</a>
+          </div>
+        </div>
+        <div class="info-card animate-on-scroll">
+          <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Office Address</h4>
+            <p>5 Rue Ferdinand de Lesseps<br>95190 Goussainville</p>
+            <a href="https://goo.gl/maps/xnz6rnegT5dSE2Ee6" target="_blank">Direction →</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form animate-on-scroll">
+        <h2>Envoyez-nous un Message</h2>
+        <form>
+          <div class="form-group">
+            <label>Nom Complet</label>
+            <input type="text" placeholder="Votre nom" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="votre@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Téléphone</label>
+            <input type="tel" placeholder="+33 ...">
+          </div>
+          <div class="form-group">
+            <label>Sujet</label>
+            <input type="text" placeholder="Objet de votre message">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+    <div class="map-section animate-on-scroll">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2616.6!2d2.4714!3d49.0289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e63e5a5f5b5b5b%3A0x5b5b5b5b5b5b5b5b!2s5%20Rue%20Ferdinand%20de%20Lesseps%2C%2095190%20Goussainville!5e0!3m2!1sfr!2sfr!4v1" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="https://www.elecsbe.com/FR/img/elec_LogoTopLeft_white.png" alt="ELEC SBE" style="height:40px;margin-bottom:16px">
+        <p>Entreprise Générale d'Électricité depuis 2005.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/elec_sbe/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://fr.linkedin.com/company/elec-sbe" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@ELECSBE-Media" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a><a href="about.html">À Propos</a><a href="contact.html">Contact</a><a href="career.html">Carrières</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt" style="margin-right:8px;color:var(--electric)"></i>5 Rue Ferdinand de Lesseps, 95190 Goussainville</p>
+        <p><i class="fas fa-phone" style="margin-right:8px;color:var(--electric)"></i>+33 1 30 11 93 30/31</p>
+        <p><i class="fas fa-envelope" style="margin-right:8px;color:var(--electric)"></i>info@elecsbe.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Localisation</h4>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2616.6!2d2.4714!3d49.0289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e63e5a5f5b5b5b%3A0x5b5b5b5b5b5b5b5b!2s5%20Rue%20Ferdinand%20de%20Lesseps%2C%2095190%20Goussainville!5e0!3m2!1sfr!2sfr!4v1" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>Copyright &copy; 2024 société ELEC S.B.E. All Rights Reserved.</p></div>
+  </div>
+</footer>
+
+<nav class="mobile-bottom-nav">
+  <ul>
+    <li><a href="index.html"><span class="nav-icon"><i class="fas fa-home"></i></span>Accueil</a></li>
+    <li><a href="index.html#services"><span class="nav-icon"><i class="fas fa-bolt"></i></span>Services</a></li>
+    <li><a href="index.html#projects"><span class="nav-icon"><i class="fas fa-building"></i></span>Projets</a></li>
+    <li><a href="index.html#videos"><span class="nav-icon"><i class="fas fa-play"></i></span>Médias</a></li>
+    <li><a href="contact.html" class="active"><span class="nav-icon"><i class="fas fa-phone"></i></span>Contact</a></li>
+  </ul>
+</nav>
+
+<script src="main.js"></script>
+</body>
+</html>

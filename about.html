@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>ELEC SBE | À Propos</title>
+  <meta name="description" content="ELECSBE, fondée en 2005, entreprise d'électricité générale spécialisée. ISO 9001, Qualifelec, FFB, IRVE.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    .page-header { min-height: 50vh; display:flex; align-items:center; justify-content:center; text-align:center;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); padding-top:100px; }
+    .page-header h1 { font-size: clamp(2rem,5vw,3.5rem); font-weight:800;
+      background: linear-gradient(135deg, var(--white), var(--electric)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .page-header p { color: var(--gray-400); margin-top:12px; font-size:1.1rem; }
+    .about-content { padding:80px 0; }
+    .about-block { margin-bottom:64px; }
+    .about-block h2 { font-size:1.8rem; font-weight:700; margin-bottom:20px; color:var(--electric); }
+    .about-block p { color:var(--gray-200); line-height:1.9; font-size:0.95rem; margin-bottom:16px; }
+    .cert-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:32px; }
+    .cert-card { background:var(--glass); border:1px solid var(--glass-border); border-radius:var(--radius);
+      padding:32px 20px; text-align:center; transition:var(--transition); }
+    .cert-card:hover { transform:translateY(-6px); background:rgba(255,255,255,0.12); box-shadow:var(--shadow-card); }
+    .cert-card .cert-icon { font-size:2.5rem; margin-bottom:16px; color:var(--electric); }
+    .cert-card h4 { font-size:0.95rem; font-weight:600; margin-bottom:8px; }
+    .cert-card p { font-size:0.8rem; color:var(--gray-400); line-height:1.5; }
+    .director-card { background:var(--glass); border:1px solid var(--glass-border); border-radius:var(--radius);
+      padding:40px; display:flex; align-items:center; gap:32px; margin-top:40px; }
+    .director-card .avatar { width:80px; height:80px; border-radius:50%;
+      background:linear-gradient(135deg,var(--blue),var(--electric)); display:flex; align-items:center; justify-content:center;
+      font-size:2rem; font-weight:700; color:var(--white); flex-shrink:0; }
+    .director-card h3 { font-size:1.2rem; font-weight:600; }
+    .director-card span { color:var(--gray-400); font-size:0.9rem; }
+    @media(max-width:768px) {
+      .cert-grid { grid-template-columns:repeat(2,1fr); }
+      .director-card { flex-direction:column; text-align:center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar scrolled">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="https://www.elecsbe.com/FR/img/elec_LogoTopLeft_white.png" alt="ELEC SBE Logo"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html" style="color:var(--electric)">À Propos</a></li>
+      <li class="dropdown">
+        <a href="index.html#specialty">Services <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:4px"></i></a>
+        <div class="dropdown-content">
+          <a href="index.html#specialty">CFO — Courants Forts</a>
+          <a href="index.html#specialty">CFA — Courants Faibles</a>
+          <a href="index.html#specialty">GPA Service</a>
+        </div>
+      </li>
+      <li><a href="index.html#projects">Projets</a></li>
+      <li><a href="career.html">Ressources Humaines</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://www.elecsbe.com/FrontServer/Default.aspx" class="btn-primary" style="padding:10px 28px;font-size:0.8rem">Mon Compte</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- MOBILE SIDEBAR -->
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-sidebar">
+  <button class="close-btn">&times;</button>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À Propos</a></li>
+    <li><a href="index.html#specialty">Services</a></li>
+    <li><a href="index.html#projects">Projets</a></li>
+    <li><a href="career.html">Ressources Humaines</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="https://www.elecsbe.com/FrontServer/Default.aspx">Mon Compte</a></li>
+  </ul>
+</div>
+
+<!-- HEADER -->
+<section class="page-header">
+  <div>
+    <h1>Votre Satisfaction, Notre Réussite</h1>
+    <p>Qui sommes-nous ?</p>
+  </div>
+</section>
+
+<!-- ABOUT CONTENT -->
+<section class="about-content">
+  <div class="container">
+    <div class="about-block animate-on-scroll">
+      <h2>À Propos d'ELEC SBE</h2>
+      <p>ELECSBE, fondée en 2005 et basée à Goussainville dans le département du Val d'Oise (95), est une entreprise d'électricité générale spécialisée dans les services électriques. Forts de nombreuses années d'expérience, nous sommes fiers de notre engagement envers l'excellence et la satisfaction client.</p>
+    </div>
+
+    <div class="about-block animate-on-scroll">
+      <h2>Nos Services</h2>
+      <p><strong>Conception Électrique :</strong> Des solutions sur mesure pour répondre aux exigences spécifiques de votre projet.</p>
+      <p><strong>Installation :</strong> Une équipe qualifiée pour mettre en œuvre vos systèmes électriques en toute sécurité et efficacité.</p>
+      <p><strong>Maintenance :</strong> Des services réguliers pour assurer le bon fonctionnement continu de vos installations.</p>
+      <p><strong>Nos Domaines d'Expertise :</strong> Électricité Industrielle, Rénovation, Logement Neuf, Éclairage LED Économe en Énergie, Systèmes de Contrôle et d'Automatisation, Solutions pour Énergies Renouvelables.</p>
+    </div>
+
+    <div class="about-block animate-on-scroll">
+      <h2>Nos Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon"><img src="https://www.elecsbe.com/FR/img/Certificate/iso.png" alt="ISO 9001" style="height:60px;margin:0 auto"></div>
+          <h4>ISO 9001</h4>
+          <p>Garantie de la qualité de nos processus et services.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><img src="https://www.elecsbe.com/FR/img/Certificate/Qualifec.png" alt="Qualifelec" style="height:60px;margin:0 auto"></div>
+          <h4>Qualifelec</h4>
+          <p>Reconnaissance de notre expertise dans le domaine électrique.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-building"></i></div>
+          <h4>FFB</h4>
+          <p>Fédération Française du Bâtiment — normes élevées dans le secteur de la construction.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-charging-station"></i></div>
+          <h4>IRVE</h4>
+          <p>Expertise dans le déploiement d'infrastructures de recharge pour véhicules électriques.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-block animate-on-scroll">
+      <h2>Engagement Environnemental</h2>
+      <p>Nous nous engageons pour un avenir durable et nous nous efforçons d'avoir un impact positif sur l'environnement. Nous croyons qu'en adoptant des sources d'énergie renouvelable et en adoptant des pratiques écologiques, nous pouvons créer un monde plus vert et plus propre pour les générations à venir.</p>
+      <p>En tant qu'entreprise d'électricité, nous reconnaissons l'importance de réduire notre empreinte carbone. C'est pourquoi nous avons investi dans des sources d'énergie renouvelable comme l'énergie solaire, éolienne et hydroélectrique.</p>
+    </div>
+
+    <div class="about-block animate-on-scroll">
+      <h2>Solidarité</h2>
+      <p>Pendant la période sans précédent de la pandémie de COVID-19, l'équipe d'ELEC SBE s'est mobilisée avec détermination pour apporter un soutien précieux aux équipes de soignants de première ligne à l'hôpital Avicenne de Bobigny.</p>
+      <p>Chez ELEC SBE, nous sommes conscients de l'importance de l'engagement social et de notre responsabilité envers la communauté.</p>
+    </div>
+
+    <div class="director-card animate-on-scroll">
+      <div class="avatar">DS</div>
+      <div>
+        <h3>Daljit Singh</h3>
+        <span>Director General</span>
+        <p style="margin-top:8px;color:var(--gray-400);font-size:0.85rem">"Pour discuter de vos besoins électriques spécifiques ou pour obtenir plus d'informations, n'hésitez pas à nous contacter."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="https://www.elecsbe.com/FR/img/elec_LogoTopLeft_white.png" alt="ELEC SBE" style="height:40px;margin-bottom:16px">
+        <p>Entreprise Générale d'Électricité depuis 2005.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/elec_sbe/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://fr.linkedin.com/company/elec-sbe" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@ELECSBE-Media" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À Propos</a>
+        <a href="index.html#specialty">Services</a>
+        <a href="index.html#projects">Projets</a>
+        <a href="career.html">Carrières</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt" style="margin-right:8px;color:var(--electric)"></i>5 Rue Ferdinand de Lesseps, 95190 Goussainville</p>
+        <p><i class="fas fa-phone" style="margin-right:8px;color:var(--electric)"></i>+33 1 30 11 93 30/31</p>
+        <p><i class="fas fa-envelope" style="margin-right:8px;color:var(--electric)"></i>info@elecsbe.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Localisation</h4>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2616.6!2d2.4714!3d49.0289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e63e5a5f5b5b5b%3A0x5b5b5b5b5b5b5b5b!2s5%20Rue%20Ferdinand%20de%20Lesseps%2C%2095190%20Goussainville!5e0!3m2!1sfr!2sfr!4v1" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2024 société ELEC S.B.E. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE BOTTOM NAV -->
+<nav class="mobile-bottom-nav">
+  <ul>
+    <li><a href="index.html"><span class="nav-icon"><i class="fas fa-home"></i></span>Accueil</a></li>
+    <li><a href="index.html#services"><span class="nav-icon"><i class="fas fa-bolt"></i></span>Services</a></li>
+    <li><a href="index.html#projects"><span class="nav-icon"><i class="fas fa-building"></i></span>Projets</a></li>
+    <li><a href="index.html#videos"><span class="nav-icon"><i class="fas fa-play"></i></span>Médias</a></li>
+    <li><a href="contact.html"><span class="nav-icon"><i class="fas fa-phone"></i></span>Contact</a></li>
+  </ul>
+</nav>
+
+<script src="main.js"></script>
+</body>
+</html>

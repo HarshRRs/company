@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>ELEC SBE | Ressources Humaines</title>
+  <meta name="description" content="Rejoignez ELEC SBE - Postulez en ligne. Entreprise d'électricité générale à Goussainville.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    .page-header { min-height:50vh; display:flex; align-items:center; justify-content:center; text-align:center;
+      background:linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); padding-top:100px; }
+    .page-header h1 { font-size:clamp(2rem,5vw,3.5rem); font-weight:800;
+      background:linear-gradient(135deg,var(--white),var(--electric)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .page-header p { color:var(--gray-400); margin-top:12px; font-size:1.1rem; }
+    .career-section { padding:80px 0; }
+    .steps-container { max-width:700px; margin:0 auto; }
+    .step-card { background:var(--glass); border:1px solid var(--glass-border); border-radius:var(--radius);
+      padding:40px; margin-bottom:28px; transition:var(--transition); position:relative; overflow:hidden; }
+    .step-card::before { content:''; position:absolute; top:0; left:0; width:4px; height:100%;
+      background:linear-gradient(180deg,var(--blue),var(--electric)); }
+    .step-card:hover { transform:translateX(6px); box-shadow:var(--shadow-card); }
+    .step-number { display:inline-block; padding:6px 16px; border-radius:20px;
+      background:linear-gradient(135deg,var(--blue),var(--electric)); font-size:0.75rem;
+      font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:16px; }
+    .step-card h3 { font-size:1.2rem; font-weight:600; margin-bottom:12px; }
+    .step-card p { color:var(--gray-400); font-size:0.9rem; line-height:1.6; }
+    .application-form { max-width:700px; margin:48px auto 0; background:var(--glass); border:1px solid var(--glass-border);
+      border-radius:var(--radius); padding:48px; }
+    .application-form h2 { font-size:1.5rem; font-weight:700; margin-bottom:28px; text-align:center; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .form-group { margin-bottom:20px; }
+    .form-group label { display:block; font-size:0.85rem; color:var(--gray-400); margin-bottom:8px; }
+    .form-group input, .form-group select, .form-group textarea { width:100%; padding:14px 18px;
+      border-radius:var(--radius-sm); border:1px solid var(--glass-border); background:rgba(255,255,255,0.05);
+      color:var(--white); font-family:'Open Sans',sans-serif; font-size:0.9rem; outline:none; transition:var(--transition); }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color:var(--electric); }
+    .form-group select { appearance:none; cursor:pointer; }
+    .form-group select option { background:var(--navy); }
+    .file-upload { border:2px dashed var(--glass-border); border-radius:var(--radius-sm); padding:32px;
+      text-align:center; cursor:pointer; transition:var(--transition); }
+    .file-upload:hover { border-color:var(--electric); background:rgba(0,212,255,0.05); }
+    .file-upload i { font-size:2rem; color:var(--electric); margin-bottom:12px; }
+    .file-upload p { font-size:0.85rem; color:var(--gray-400); }
+    .submit-btn { width:100%; padding:16px; font-family:'Rubik',sans-serif; font-size:1rem; font-weight:600;
+      color:var(--white); background:linear-gradient(135deg,var(--blue),var(--electric)); border:none;
+      border-radius:50px; cursor:pointer; transition:var(--transition); text-transform:uppercase; letter-spacing:1px; margin-top:12px; }
+    .submit-btn:hover { transform:translateY(-2px); box-shadow:0 8px 32px rgba(0,212,255,0.3); }
+    @media(max-width:768px) { .form-row { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar scrolled">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="https://www.elecsbe.com/FR/img/elec_LogoTopLeft_white.png" alt="ELEC SBE Logo"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À Propos</a></li>
+      <li class="dropdown">
+        <a href="index.html#specialty">Services <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:4px"></i></a>
+        <div class="dropdown-content">
+          <a href="index.html#specialty">CFO — Courants Forts</a>
+          <a href="index.html#specialty">CFA — Courants Faibles</a>
+          <a href="index.html#specialty">GPA Service</a>
+        </div>
+      </li>
+      <li><a href="index.html#projects">Projets</a></li>
+      <li><a href="career.html" style="color:var(--electric)">Ressources Humaines</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://www.elecsbe.com/FrontServer/Default.aspx" class="btn-primary" style="padding:10px 28px;font-size:0.8rem">Mon Compte</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mobile-menu-overlay"></div>
+<div class="mobile-sidebar">
+  <button class="close-btn">&times;</button>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À Propos</a></li>
+    <li><a href="index.html#specialty">Services</a></li>
+    <li><a href="index.html#projects">Projets</a></li>
+    <li><a href="career.html">Ressources Humaines</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<section class="page-header">
+  <div>
+    <h1>Nous Recrutons</h1>
+    <p>Emploi Prioritaire</p>
+  </div>
+</section>
+
+<section class="career-section">
+  <div class="container">
+    <div class="steps-container">
+      <div class="step-card animate-on-scroll">
+        <span class="step-number">Étape 1</span>
+        <h3>Données Personnelles</h3>
+        <p>Bienvenue ! Configurons vos données personnelles pour commencer votre candidature.</p>
+      </div>
+      <div class="step-card animate-on-scroll">
+        <span class="step-number">Étape 2</span>
+        <h3>Profil de Travail</h3>
+        <p>Établissons votre profil de travail et votre expérience professionnelle.</p>
+      </div>
+      <div class="step-card animate-on-scroll">
+        <span class="step-number">Étape 3</span>
+        <h3>Aperçu &amp; Soumission</h3>
+        <p>Vérifiez toutes les informations et soumettez votre demande d'emploi.</p>
+      </div>
+    </div>
+
+    <div class="application-form animate-on-scroll">
+      <h2>Formulaire de Candidature</h2>
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Titre du Poste</label>
+            <input type="text" placeholder="Électricien, Chef de Chantier..." required>
+          </div>
+          <div class="form-group">
+            <label>Contrat Type</label>
+            <select>
+              <option value="">Sélectionner...</option>
+              <option>CDI</option>
+              <option>CDD</option>
+              <option>Intérim</option>
+              <option>Alternance</option>
+              <option>Stage</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nom</label>
+            <input type="text" placeholder="Votre nom" required>
+          </div>
+          <div class="form-group">
+            <label>Prénom</label>
+            <input type="text" placeholder="Votre prénom" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Adresse</label>
+          <input type="text" placeholder="Address Line 1">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Code Postal</label>
+            <input type="text" placeholder="95190">
+          </div>
+          <div class="form-group">
+            <label>Expérience</label>
+            <select>
+              <option value="">Sélectionner...</option>
+              <option>0-1 ans</option>
+              <option>1-3 ans</option>
+              <option>3-5 ans</option>
+              <option>5-10 ans</option>
+              <option>10+ ans</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="votre@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Numéro de Téléphone</label>
+            <input type="tel" placeholder="+33 ..." required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>CV (Aperçu)</label>
+          <div class="file-upload">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Cliquez pour télécharger votre CV<br><small>PDF, DOC, DOCX (Max 5MB)</small></p>
+            <input type="file" style="display:none" accept=".pdf,.doc,.docx">
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">Soumettre la Candidature</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <img src="https://www.elecsbe.com/FR/img/elec_LogoTopLeft_white.png" alt="ELEC SBE" style="height:40px;margin-bottom:16px">
+        <p>Entreprise Générale d'Électricité depuis 2005.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/elec_sbe/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://fr.linkedin.com/company/elec-sbe" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.youtube.com/@ELECSBE-Media" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt" style="margin-right:8px;color:var(--electric)"></i>5 Rue Ferdinand de Lesseps, 95190 Goussainville</p>
+        <p><i class="fas fa-phone" style="margin-right:8px;color:var(--electric)"></i>+33 1 30 11 93 30/31</p>
+        <p><i class="fas fa-envelope" style="margin-right:8px;color:var(--electric)"></i>info@elecsbe.com</p>
+      </div>
+      <div class="footer-col"><h4>Navigation</h4>
+        <a href="index.html">Accueil</a><a href="about.html">À Propos</a><a href="contact.html">Contact</a><a href="career.html">Carrières</a>
+      </div>
+      <div class="footer-col"><h4>Localisation</h4>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2616.6!2d2.4714!3d49.0289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e63e5a5f5b5b5b%3A0x5b5b5b5b5b5b5b5b!2s5%20Rue%20Ferdinand%20de%20Lesseps%2C%2095190%20Goussainville!5e0!3m2!1sfr!2sfr!4v1" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>Copyright &copy; 2024 société ELEC S.B.E. All Rights Reserved.</p></div>
+  </div>
+</footer>
+
+<nav class="mobile-bottom-nav">
+  <ul>
+    <li><a href="index.html"><span class="nav-icon"><i class="fas fa-home"></i></span>Accueil</a></li>
+    <li><a href="index.html#services"><span class="nav-icon"><i class="fas fa-bolt"></i></span>Services</a></li>
+    <li><a href="index.html#projects"><span class="nav-icon"><i class="fas fa-building"></i></span>Projets</a></li>
+    <li><a href="index.html#videos"><span class="nav-icon"><i class="fas fa-play"></i></span>Médias</a></li>
+    <li><a href="contact.html"><span class="nav-icon"><i class="fas fa-phone"></i></span>Contact</a></li>
+  </ul>
+</nav>
+
+<script src="main.js"></script>
+<script>
+document.querySelector('.file-upload').addEventListener('click', function() {
+  this.querySelector('input[type=file]').click();
+});
+</script>
+</body>
+</html>
